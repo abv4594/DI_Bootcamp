@@ -1,0 +1,46 @@
+.main{
+    padding: 100px 200px 100px 200px;
+    background-color: rgb(244,244,246);
+}
+
+.nav_all{
+    display:flex;
+    border-bottom: 2px solid gray;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.nav_left{
+    width: 75%;
+    align-items: flex-start;
+}
+
+.nav_right{
+    width: 25%;
+    align-items: flex-end;
+}
+
+.h1_light{
+    font-weight: lighter;
+    padding: 0;
+    font-size: 40px;
+}
+
+.h1_bold{
+    font-weight: bold;
+    padding: 0;
+    font-size: 40px;
+}
+
+.nav_img {
+    width: 200px;
+}
+
+.content_h {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}

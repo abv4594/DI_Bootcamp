@@ -1,5 +1,37 @@
 p {
-    background-color: powderblue;
     font-size: 28px;
     font-style: italic;
+    text-indent: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+article {
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+    background-color: lightgreen;
+
+}
+
+#blue {
+    height:100px;
+    width:30px;
+    background-color: blue;
+    display: inline;
+}
+
+#white {
+    height:100px;
+    width:30px;
+    background-color: white;
+    display: inline;
+}
+
+#red {
+    height:100px;
+    width:30px;
+    background-color: red;
+    display: inline;
 }
