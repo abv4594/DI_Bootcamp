@@ -13,6 +13,7 @@ ul {
 
 html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
+    
 }
 
 /* specific classes */
@@ -30,7 +31,7 @@ html,h1,h2,h3,h4,h5,h6,a{
     float: left;
 }
 
-.nav_item {
+.nav_list a {
     display: block;
     color:blue;
     text-align: center;
@@ -38,9 +39,18 @@ html,h1,h2,h3,h4,h5,h6,a{
     text-decoration: none;
 }
 
-.nav_item:hover {
+.nav_list a:hover {
     background-color: blueviolet;
     color: white
+}
+
+.nav_list a.active {
+    color: blue;
+}
+
+
+.nav_bar .icon {
+    display: none;
 }
 
 .main {
@@ -95,6 +105,8 @@ html,h1,h2,h3,h4,h5,h6,a{
     background-color: orange;
 }
 
+
+
 /* responsiveness */
 
 @media all and (min-width: 600px) and (max-width: 1000px) {
@@ -133,4 +145,19 @@ html,h1,h2,h3,h4,h5,h6,a{
             "G"
     }
 
+    
+
 }
+
+@media screen and (max-width: 600px) {
+
+    .nav_bar li:not(:first-child) {display: none;}
+    .icon {
+        float: right;
+        display: block;
+    }
+
+
+
+}
+
