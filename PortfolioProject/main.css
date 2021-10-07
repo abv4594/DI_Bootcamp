@@ -1,0 +1,136 @@
+/* setting generic stuff */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0
+}
+ul {
+    list-style-type: none;
+}
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+
+/* specific classes */
+
+.body_settings {
+    padding: 2%;
+}
+
+.nav_bar {
+    overflow:hidden;
+    background-color: gainsboro;
+}
+
+.nav_list {
+    float: left;
+}
+
+.nav_item {
+    display: block;
+    color:blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_item:hover {
+    background-color: blueviolet;
+    color: white
+}
+
+.main {
+    
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 3fr 1.5fr 0.5fr;
+
+    grid-template-areas: 
+        "A A B B"
+        "C D E F"
+        "G G G G";
+}
+
+.box_eng_to_exec {
+    grid-area: A;
+    background-color: wheat;
+}
+
+.box_exec_to_prog {
+    grid-area: B;
+    background-color: yellowgreen;
+}
+
+.box1 {
+    grid-area: C;
+    background-color: violet;
+}
+
+.box2 {
+    grid-area: D;
+    background-color: blue;
+}
+
+.box3 {
+    grid-area: E;
+    background-color:purple;
+}
+.box4 {
+    grid-area: F;
+    background-color:red;
+}
+
+[class*="box"]:hover {
+    background-color: white;
+    border: 2px solid gray;
+}
+
+.footer {
+    grid-area: G;
+    background-color: orange;
+}
+
+/* responsiveness */
+
+@media all and (min-width: 600px) and (max-width: 1000px) {
+
+    .main {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.7fr 0.7fr 0.3fr;
+
+        grid-template-areas: 
+            "A A"
+            "B B"
+            "C D"
+            "E F"
+            "G G"
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    .main {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.7fr 0.7fr 0.7fr 0.7fr 0.3fr;
+
+        grid-template-areas: 
+            "A"
+            "B"
+            "C"
+            "D"
+            "E"
+            "F"
+            "G"
+    }
+
+}
