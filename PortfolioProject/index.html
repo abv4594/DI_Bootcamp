@@ -11,13 +11,14 @@
 <body class="body_settings">
     
     <nav>
-        <ul class="nav_bar">
-            <li class="nav_list"><a class="active" href="#">Home</a></li>
-            <li class="nav_list"><a href="#">About</a></li>
-            <li class="nav_list"><a href="#">Contact</a></li>
-            <li class="nav_list">  
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <ul class="nav_bar" id="my_nav_bar">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="icon">  
+                <a href="javascript:void(0);" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
+                </a>
             </li>
            
 
@@ -32,9 +33,18 @@
         <div class="box3">Stuff</div>
         <div class="box4">Stuff</div>
         <div class="footer">Stuff</div>
-        
-
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my_nav_bar");
+            if (x.className === "nav_bar") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav_bar";
+            }
+        }
+    </script>
 
 </body>
 </html>

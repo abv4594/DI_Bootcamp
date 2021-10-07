@@ -23,25 +23,32 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 .nav_bar {
-    overflow:hidden;
+    /* overflow:hidden; */
     background-color: gainsboro;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
 }
 
-.nav_list {
+/* .nav_list {
     float: left;
-}
+} */
 
-.nav_list a {
+
+.nav_bar a {
+    
     display: block;
-    color:blue;
     text-align: center;
     padding: 14px 16px;
+    color: blue;
     text-decoration: none;
+    
 }
 
-.nav_list a:hover {
+.nav_bar a:hover {
     background-color: blueviolet;
     color: white
+
 }
 
 .nav_list a.active {
@@ -109,6 +116,8 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 /* responsiveness */
 
+/* responsiveness for the layout */
+
 @media all and (min-width: 600px) and (max-width: 1000px) {
 
     .main {
@@ -128,7 +137,6 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 @media all and (max-width: 600px) {
-
     .main {
         
         display: grid;
@@ -144,20 +152,27 @@ html,h1,h2,h3,h4,h5,h6,a{
             "F"
             "G"
     }
+}
 
-    
+/* responsiveness for the menu */
+
+/* clears the menu items, displays the icon and bring the icon to the 1st position */
+@media screen and (max-width: 600px) {
+    .nav_bar li {display:none;}
+    .nav_bar li.icon {
+        display: inline;
+        order: -1;}
+    .nav_bar {justify-content: center;}
 
 }
 
+/* The "responsive" class is added to the nav_bar with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-
-    .nav_bar li:not(:first-child) {display: none;}
-    .icon {
-        float: right;
-        display: block;
+    .nav_bar.responsive {
+        flex-direction: column;
     }
-
-
-
+    .nav_bar.responsive li {
+        display: inline;
+    }
 }
 
