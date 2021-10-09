@@ -14,6 +14,16 @@ ul {
 html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway"; 
     text-align: center;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    opacity: 0.3;
+    
 }
 
 /* specific classes */
@@ -55,7 +65,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 .main { /* main grid map */
     
-    height: 150vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3fr 1.5fr 0.5fr;
@@ -68,32 +78,32 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 .box_eng_to_exec {
     grid-area: A;
-    background-color: rgb(112, 112, 197);
+    background-color: rgb(77, 73, 85);
     
 }
 
 .box_exec_to_prog {
     grid-area: B;
-    background-color: rgb(58, 160, 160);
+    background-color: rgb(58, 160, 112);
 }
 
 .box1 {
     grid-area: C;
-    background-color: violet;
+    background-color: rgb(48, 43, 98);
 }
 
 .box2 {
     grid-area: D;
-    background-color: blue;
+    background-color: rgb(26, 26, 104);
 }
 
 .box3 {
     grid-area: E;
-    background-color:purple;
+    background-color:rgb(91, 52, 117);
 }
 .box4 {
     grid-area: F;
-    background-color:red;
+    background-color:rgb(160, 82, 82);
 }
 
 .box_footer {
