@@ -31,15 +31,13 @@ if (pos==-1) {
 
 let nums = prompt('Please enter a string of numbers separated by commas');
 
-let nums_arr = nums.split(",");
+let nums_exp = nums.replace(/,/g, "+");
+console.log(nums_exp);
 
-// Solution 1 (doesn't work in all pages):
-console.log('Solution 1:')
-console.log(eval(nums_arr[0] + '+' + nums_arr[1]));
+// Solution (seems not to work all the time):
+console.log('Solution:');
+console.log(eval(nums_exp));
 
-// Solution 2:
-console.log('Solution 2:')
-console.log(parseInt(nums_arr[0])+parseInt(nums_arr[1]));
 
 // Exercise 4 : Boom
 // Instructions
