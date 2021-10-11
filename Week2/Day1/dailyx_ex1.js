@@ -15,13 +15,18 @@ let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 console.log('Initial array:' + fruits)
 
 console.log('removing...: ' + fruits.shift()); // removes "Banana" - shift() return the removed item.
+
 console.log('now fruits is: ' + fruits); 
 
-console.log('sortng...: ' + fruits.sort()); // sort() returns the sorted array
+console.log('sorting...: ' + fruits.sort()); // sort() returns the sorted array
 
 fruits.push("Kiwi"); // careful, push() doesn't returnt the object changed but returns its new length!
 
 console.log("added Kiwi to the end...: " + fruits);
+
+console.log("Splicing: "+ fruits.splice(0,1));
+
+console.log("Removed Apple...:" + fruits);
 
 console.log("reversing fruits we get: " + fruits.reverse()); // reverse() returns the reversed array
 
