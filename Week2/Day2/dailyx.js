@@ -1,13 +1,21 @@
+//Optimal solution below (down less optmal one):
+let sentence = prompt("Enter a sentence:");
+console.log(sentence.replace(/not(\s\w+)*\sbad/, 'good'));
+
 // Instructions
 // Create a variable called sentence.The value of the variable should be a string that contains the words “not” and “bad”. For example, “The movie is not that bad, I like it”.
 let sentence = prompt("Please enter a sentence that contains the words 'not' and/or 'bad'");
 let newSentence; //stores the result
+console.log(sentence);
+
 
 // Create a variable called wordNot where it’s value is the first appearance of the substring “not” (from the sentence variable).
 let wordNot = sentence.search(/not/);
+console.log(wordNot);
 
 // Create a variable called wordBad where it’s value is the first appearance of the substring “bad” (from the sentence variable).
 let wordBad = sentence.search(/bad/); 
+console.log(wordBad);
 
 // If the word “bad” comes after the word “not”, you should replace the whole “not…bad” substring with “good”, then console.log the result.
 if (wordBad>wordNot){
