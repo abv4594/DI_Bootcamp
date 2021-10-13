@@ -23,7 +23,7 @@ for (let outCounter = 1; outCounter<=NumLevels; outCounter++) {
 
 // with simple loop
 
-console.log("With simple loop>>>>");
+console.log("With simple loop >>>> ");
 
 for (let counter = 1; counter<=NumLevels; counter++) {
     console.log('* '.repeat(counter));
