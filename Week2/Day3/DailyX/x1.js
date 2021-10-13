@@ -9,13 +9,23 @@
 // * * * * *
 // * * * * * *
 
-let numLevels = parseInt(prompt("How many levels for the pattern?"));
+const NumLevels = parseInt(prompt("How many levels for the pattern?"));
 
-for (let outCounter = 1; outCounter<=numLevels; outCounter++) {
+// with nested loop
+
+for (let outCounter = 1; outCounter<=NumLevels; outCounter++) {
     let strOut = "";
     for (let innerCounter =1; innerCounter<=outCounter; innerCounter++) {
         strOut += '* ';
     }
     console.log(strOut);
+}
+
+// with simple loop
+
+console.log("With simple loop>>>>");
+
+for (let counter = 1; counter<=NumLevels; counter++) {
+    console.log('* '.repeat(counter));
 }
 
