@@ -60,7 +60,7 @@ function getStr(txt) { //get a text and validates it's not a number or null
     let str = null;
     do {
         str = prompt(txt)
-    } while (!(/^[a-zA-Z]+$/.test(str)))
+    } while (!(/^[a-z]+$/i.test(str)))
     return str;
 }
 

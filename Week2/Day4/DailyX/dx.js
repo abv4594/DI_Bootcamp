@@ -12,6 +12,7 @@
 
 function maxLength(arr) {
     return Math.max(...arr.map((word)=>{return word.length}))
+    //(10,4,9,13): returns 13
 }
 
 function fillSpace(str,length) {//returns a new str with spaces between str.length till length
