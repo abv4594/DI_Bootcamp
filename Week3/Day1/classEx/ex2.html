@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <div id="container">Users:</div>
+    <ul class="list">
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <ul class="list">
+        <li>Sarah</li>
+        <li>Dan</li>
+    </ul>
+
+    <script>
+        let divId = document.getElementById("container");
+        let ulNodes = document.getElementsByClassName("list");
+
+        // printing the text content of each li
+
+        // solution with for loop
+        console.log("Solution with for loop:");
+
+        for (let i = 0;i<ulNodes.length;i++) {
+            for (let j=0; j<ulNodes[i].children.length; j++) {
+                console.log(ulNodes[i].children[j].textContent)
+            }
+            }
+        console.log("Solution with forEach loop:");
+
+        // solution with forEach -> using Array.from(...)
+        Array.from(ulNodes).forEach(ulNode=>Array.from(ulNode.children).forEach(li=>console.log(li.textContent)));
+
+
+    </script>
+
+</body>
+
+</html>

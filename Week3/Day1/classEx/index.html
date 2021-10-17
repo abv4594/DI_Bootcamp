@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Users:</div>
+    <ul>
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <script>
+        let firstDiv = document.body.firstElementChild; 
+        //let firstDiv = document.body.children[0];
+
+        let ulEle = firstDiv.nextElementSibling;
+        //let ulEle = firstDiv.nextSibling;
+
+        let pete = ulEle.lastElementChild;
+        //let pete = ulEle.children[1];
+
+
+        console.log(pete);
+
+        pete.textContent += " Smith";
+
+        // console.log(pete);
+
+    </script>
+</body>
+</html>

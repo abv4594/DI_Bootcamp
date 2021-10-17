@@ -1,0 +1,32 @@
+<!-- let names = ["John", "Lola", "Tom"];
+1. Create a function that adds the name of each students to
+a paragraph
+2. each paragraph needs to be background yellow, font-size 25px
+3. Add the 3 paragraph to the div already on the page -->
+
+
+<html>
+
+    <div id="container"></div>
+
+<body>
+   
+<script>
+    let names = ["John", "Lola", "Tom"];
+
+    function addToP(name) {
+        let ele = document.createElement("p")
+        ele.textContent = name;
+        ele.style.backgroundColor = "yellow";
+        ele.style.fontSize = "25px";
+        return ele 
+    }
+
+    let divEle = document.getElementById("container");
+
+    names.forEach(name=>divEle.appendChild(addToP(name)));
+
+</script>
+</body>
+
+</html>
