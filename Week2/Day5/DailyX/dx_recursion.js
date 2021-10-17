@@ -48,7 +48,7 @@ function beer(num, pace) {
     console.log(`${num} ${num==1?"bottle":"bottles"} of beer on the wall`);
     console.log(`${num} ${num==1?"bottle":"bottles"} of beer on the wall`);
     console.log(`${num} bottles of beer`);
-    if (num>pace) {
+    if (num>=pace) {
         console.log(`Take ${pace} down, pass them around`)
     } else {console.log (`Oops not enough beer to take ${pace} bottles down`)}
     beer(num-pace, pace=pace+1);
