@@ -1,0 +1,30 @@
+.calendarSection {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.calendar {
+
+}
+.calendar tr:nth-child(even){background-color: #f2f2f2;}
+
+.calendar th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1620a3;
+  color: white;}
+
+.calendar td:hover {background-color:rgb(106, 145, 219)}
+
+.calendar td, .calendar th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
