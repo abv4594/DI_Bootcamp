@@ -49,7 +49,7 @@ let solarSystem = {}; // this object will hold planets, with their respective mo
 planet_config_file.forEach(line => solarSystem[line[0]]=new Planet(line[1],line[2],line[3]));
 
 
-// Then the moons. Notice moons are arrays inside the objects (could be objects, but for next release)
+// Then the moons. Notice moons are arrays of moon objects inside the planet objects.
 moon_config_file.forEach(line => solarSystem[line[0]]["moons"].push(new Moon(line[1],line[2])));
 
 // Solar System is ready
