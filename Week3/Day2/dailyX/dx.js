@@ -6,18 +6,20 @@ const shufBtn = document.querySelector("#shuffle-button");
 const resetBtn = document.querySelector("#reset-values"); 
 const story = document.querySelector("#story");
 
-console.log(fields);
-console.log (libBtn);
+// console.log(fields);
+// console.log (libBtn);
 
-//adding the event listener:
+//adding the event listeners:
 libBtn.addEventListener("click",libBtnClick);
 shufBtn.addEventListener("click",shuffleValues);
+
 resetBtn.addEventListener("click",resetFields);
 
 let fieldValues = [];//instatiate "global array" which will store the words
 
 function libBtnClick(event) {
   
+    //first checkt the fields are not empty
     if (!checkFields()) {
         alert("Please fill all the spaces.");
         return
@@ -31,9 +33,7 @@ function libBtnClick(event) {
         fieldValues.push(fields[i].value)
     }
 
-
-   
-    //fieldValues[0]=value of noun, [1]=value of adjective, ...
+    //Now I have: fieldValues[0]=value of noun, [1]=value of adjective, ...
     //fill the sentence
     story.innerHTML = fillStory(fieldValues);
 
