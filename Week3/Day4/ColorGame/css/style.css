@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(211, 211, 211, 0.603);
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebox {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    border: red solid 1px;
+    justify-content: space-around;
+}
+
+.drawGrid {
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(60,1fr);
+    grid-template-rows: repeat(24,1fr);
+    border: red solid 1px;
+}
+
+.clearBox {
+    height: 15%;
+    justify-content: center;
+}
+
+.colorGrid {
+    padding: 3%; 
+    height: 80%;
+    border: red solid 1px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(7,1fr);
+    gap:2% 2%;
+}
+
+.red {
+    background-color: red;
+}
+
+
+.blue {
+    background-color: blue;
+}
+
+
+.yellow {
+    background-color:yellow;
+}
+
+
+.black {
+    background-color:black;
+}
+
+.colorSquare {
+   
+    width: 100%;
+    height: 100%;
+    border: solid black 1px;
+    
+}
+
+.clearBtn {
+    width: 90%;
+    height: 90%;
+    margin: 5px;
+    border: solid black 1px;
+    border-radius: 5%;
+    background-color: lightgray;
+    font-size: 20px;
+}

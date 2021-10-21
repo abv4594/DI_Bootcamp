@@ -1,0 +1,88 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+        font-family: 'Poppins';
+}
+
+.box {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236,95,75);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.boxWhite {
+    background-color: white;
+    color: lightgray;
+    font-size: 14px;
+    width: 80% ;
+}
+
+.formBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.listTasks {
+    height: 40%;
+    padding: 20px;
+    margin-top: 20px;
+  
+}
+
+
+.addBtn {
+    color: rgb(77, 77, 224);
+    background-color: white;
+    font-weight:bold ;
+    border:none
+}
+
+.boxInput {
+    border:none;
+    color: gray;
+    width: 70%;
+}
+
+.box > h1,h2,h3 {
+    color: white;
+}
+
+.xbtn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0 2px;
+}
+
+.done {
+    text-decoration: line-through;
+    color:red
+}
+
+.taskLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    border-bottom: royalblue solid 1px;
+    color: black
+
+}
