@@ -1,6 +1,6 @@
 const colors = [
     'red',
-    'orangered',
+    'orange',
     'orange',
     'yellow',
     'yellowgreen',
@@ -21,3 +21,14 @@ const colors = [
     'black',
     'white',
 ]
+
+//fill collor grid
+
+let colorGrid = document.querySelector(".colorGrid")
+
+for (let color of colors){
+    let colorDiv = document.createElement("div");
+    colorDiv.classList.add("colorsquare");
+    colorDiv.classList.add(color);
+    colorGrid.appendChild(colorDiv);
+}
